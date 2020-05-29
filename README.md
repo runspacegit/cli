@@ -9,6 +9,14 @@ Runspace daemon cli
 [![Downloads/week](https://img.shields.io/npm/dw/@runspace/cli.svg)](https://npmjs.org/package/@runspace/cli)
 [![License](https://img.shields.io/npm/l/@runspace/cli.svg)](https://github.com/runspacegit/cli/blob/master/package.json)
 
+## Installing
+```shell
+$ yarn global add @runspace/cli
+$ # or using npm
+$ npm i -g @runspace/cli
+$ runspace help
+```
+
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
