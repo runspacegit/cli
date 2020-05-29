@@ -23,7 +23,7 @@
     "ataraxia-services": "^0.8.2",
     "ataraxia-tcp": "^0.8.2",
     "cli-ux": "^5.4.6",
-    "tslib": "^1",
+    "tslib": "^2",
     "winston": "^3.2.1"
   },
   "devDependencies": {
