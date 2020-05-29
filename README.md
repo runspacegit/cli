@@ -5,7 +5,8 @@ Runspace daemon cli
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/@runspace/cli.svg)](https://npmjs.org/package/@runspace/cli)
-[![Codecov](https://codecov.io/gh/runspacegit/cli/branch/master/graph/badge.svg)](https://codecov.io/gh/runspacegit/cli)
+[![Maintainability](https://api.codeclimate.com/v1/badges/12024b4af777d8de8deb/maintainability)](https://codeclimate.com/github/runspacegit/cli/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/12024b4af777d8de8deb/test_coverage)](https://codeclimate.com/github/runspacegit/cli/test_coverage)
 [![Downloads/week](https://img.shields.io/npm/dw/@runspace/cli.svg)](https://npmjs.org/package/@runspace/cli)
 [![License](https://img.shields.io/npm/l/@runspace/cli.svg)](https://github.com/runspacegit/cli/blob/master/package.json)
 
