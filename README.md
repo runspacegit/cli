@@ -39,6 +39,7 @@ USAGE
 <!-- commands -->
 * [`runspace autocomplete [SHELL]`](#runspace-autocomplete-shell)
 * [`runspace commands`](#runspace-commands)
+* [`runspace daemon:broadcast [FILE]`](#runspace-daemonbroadcast-file)
 * [`runspace help [COMMAND]`](#runspace-help-command)
 * [`runspace run [FILE]`](#runspace-run-file)
 * [`runspace update [CHANNEL]`](#runspace-update-channel)
@@ -81,6 +82,23 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-commands](https://github.com/oclif/plugin-commands/blob/v1.2.3/src/commands/commands.ts)_
+
+## `runspace daemon:broadcast [FILE]`
+
+broadcasts runspace daemon script inside network
+
+```
+USAGE
+  $ runspace daemon:broadcast [FILE]
+
+OPTIONS
+  -h, --help  show CLI help
+
+EXAMPLE
+  $ runspace daemon broadcast ./examples/functions/hello.js
+```
+
+_See code: [src/commands/daemon/broadcast.ts](https://github.com/runspacegit/cli/blob/v0.0.0/src/commands/daemon/broadcast.ts)_
 
 ## `runspace help [COMMAND]`
 

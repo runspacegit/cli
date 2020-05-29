@@ -4,8 +4,10 @@
     "importHelpers": true,
     "module": "commonjs",
     "outDir": "lib",
+    "moduleResolution": "node",
     "rootDir": "src",
     "strict": true,
+    "esModuleInterop": true,
     "target": "es2017"
   },
   "include": [
