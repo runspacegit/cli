@@ -1,7 +1,7 @@
 {
   "name": "@runspace/cli",
   "description": "Runspace daemon cli",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Misha Marinenko @0x77dev",
   "bin": {
     "runspace": "./bin/run"
