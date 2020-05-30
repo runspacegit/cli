@@ -32,7 +32,7 @@ $ npm install -g @runspace/cli
 $ runspace COMMAND
 running command...
 $ runspace (-v|--version|version)
-@runspace/cli/0.1.4 darwin-x64 node-v12.16.3
+@runspace/cli/0.1.5 darwin-x64 node-v12.16.3
 $ runspace --help [COMMAND]
 USAGE
   $ runspace COMMAND
@@ -101,7 +101,7 @@ EXAMPLE
   $ runspace daemon
 ```
 
-_See code: [src/commands/daemon/index.ts](https://github.com/runspacegit/cli/blob/v0.1.4/src/commands/daemon/index.ts)_
+_See code: [src/commands/daemon/index.ts](https://github.com/runspacegit/cli/blob/v0.1.5/src/commands/daemon/index.ts)_
 
 ## `runspace daemon:broadcast [FILE]`
 
@@ -115,10 +115,10 @@ OPTIONS
   -h, --help  show CLI help
 
 EXAMPLE
-  $ runspace daemon broadcast ./examples/functions/hello.js
+  $ runspace daemon:broadcast ./examples/functions/hello.js
 ```
 
-_See code: [src/commands/daemon/broadcast.ts](https://github.com/runspacegit/cli/blob/v0.1.4/src/commands/daemon/broadcast.ts)_
+_See code: [src/commands/daemon/broadcast.ts](https://github.com/runspacegit/cli/blob/v0.1.5/src/commands/daemon/broadcast.ts)_
 
 ## `runspace daemon:nodes`
 
@@ -132,7 +132,7 @@ EXAMPLE
   $ runspace daemon:nodes
 ```
 
-_See code: [src/commands/daemon/nodes.ts](https://github.com/runspacegit/cli/blob/v0.1.4/src/commands/daemon/nodes.ts)_
+_See code: [src/commands/daemon/nodes.ts](https://github.com/runspacegit/cli/blob/v0.1.5/src/commands/daemon/nodes.ts)_
 
 ## `runspace help [COMMAND]`
 
@@ -168,7 +168,7 @@ EXAMPLE
   running... done
 ```
 
-_See code: [src/commands/run.ts](https://github.com/runspacegit/cli/blob/v0.1.4/src/commands/run.ts)_
+_See code: [src/commands/run.ts](https://github.com/runspacegit/cli/blob/v0.1.5/src/commands/run.ts)_
 
 ## `runspace update [CHANNEL]`
 
