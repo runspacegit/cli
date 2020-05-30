@@ -8,7 +8,7 @@ import {ConfigUtil} from '@runspace/daemon/dist/utils/config'
 import {Daemon} from '@runspace/daemon/dist/daemon'
 import {cli} from 'cli-ux'
 import {existsSync, readFileSync} from 'fs'
-import {createLogger} from 'winston'
+import winston, {createLogger} from 'winston'
 
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 
@@ -36,7 +36,11 @@ export default class Start extends Command {
     cli.prideAction.start('Running...')
     const configUtil = new ConfigUtil()
     await configUtil.bootstap()
-    const logger = createLogger()
+    const logger = createLogger({
+      transports: [
+        new winston.transports.Console(),
+      ],
+    })
     const net = new Network({
       name: configUtil.config.network.name,
       authentication: [new AnonymousAuth()],
@@ -79,7 +83,7 @@ export default class Start extends Command {
     })
     try {
       const daemon = new Daemon(net, configUtil, logger)
-      cli.log('Waining 10 seconds')
+      cli.log('Waiting 10 seconds')
       await delay(10000)
       await daemon.broadcastRawFunction(readFileSync(args.file).toString())
       cli.prideAction.start('Waiting for the events', 'use Ctrl+C to exit')
