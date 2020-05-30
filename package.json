@@ -24,6 +24,7 @@
     "ataraxia-tcp": "^0.8.2",
     "ataraxia-ws-client": "^0.8.2",
     "cli-ux": "^5.4.6",
+    "pm2": "^4.4.0",
     "tslib": "^2",
     "winston": "^3.2.1",
     "ws": "^7.3.0"

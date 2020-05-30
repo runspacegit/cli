@@ -41,7 +41,7 @@ $ npm install -g @runspace/cli
 $ runspace COMMAND
 running command...
 $ runspace (-v|--version|version)
-@runspace/cli/0.1.5 darwin-x64 node-v12.16.3
+@runspace/cli/0.1.7 darwin-x64 node-v12.16.3
 $ runspace --help [COMMAND]
 USAGE
   $ runspace COMMAND
@@ -55,6 +55,9 @@ USAGE
 * [`runspace daemon`](#runspace-daemon)
 * [`runspace daemon:broadcast [FILE]`](#runspace-daemonbroadcast-file)
 * [`runspace daemon:nodes`](#runspace-daemonnodes)
+* [`runspace daemon:runner`](#runspace-daemonrunner)
+* [`runspace daemon:runner:start`](#runspace-daemonrunnerstart)
+* [`runspace daemon:runner:stop`](#runspace-daemonrunnerstop)
 * [`runspace help [COMMAND]`](#runspace-help-command)
 * [`runspace run [FILE]`](#runspace-run-file)
 * [`runspace update [CHANNEL]`](#runspace-update-channel)
@@ -110,7 +113,7 @@ EXAMPLE
   $ runspace daemon
 ```
 
-_See code: [src/commands/daemon/index.ts](https://github.com/runspacegit/cli/blob/v0.1.5/src/commands/daemon/index.ts)_
+_See code: [src/commands/daemon/index.ts](https://github.com/runspacegit/cli/blob/v0.1.7/src/commands/daemon/index.ts)_
 
 ## `runspace daemon:broadcast [FILE]`
 
@@ -127,7 +130,7 @@ EXAMPLE
   $ runspace daemon:broadcast ./examples/functions/hello.js
 ```
 
-_See code: [src/commands/daemon/broadcast.ts](https://github.com/runspacegit/cli/blob/v0.1.5/src/commands/daemon/broadcast.ts)_
+_See code: [src/commands/daemon/broadcast.ts](https://github.com/runspacegit/cli/blob/v0.1.7/src/commands/daemon/broadcast.ts)_
 
 ## `runspace daemon:nodes`
 
@@ -141,7 +144,58 @@ EXAMPLE
   $ runspace daemon:nodes
 ```
 
-_See code: [src/commands/daemon/nodes.ts](https://github.com/runspacegit/cli/blob/v0.1.5/src/commands/daemon/nodes.ts)_
+_See code: [src/commands/daemon/nodes.ts](https://github.com/runspacegit/cli/blob/v0.1.7/src/commands/daemon/nodes.ts)_
+
+## `runspace daemon:runner`
+
+shows daemon status
+
+```
+USAGE
+  $ runspace daemon:runner
+
+EXAMPLE
+  $ runspace daemon:runner
+  ⛓ Runspace Daemon Process List
+  Name               Status  User 
+  runspace-daemon    stopped 0x77
+```
+
+_See code: [src/commands/daemon/runner/index.ts](https://github.com/runspacegit/cli/blob/v0.1.7/src/commands/daemon/runner/index.ts)_
+
+## `runspace daemon:runner:start`
+
+starts daemon
+
+```
+USAGE
+  $ runspace daemon:runner:start
+
+EXAMPLES
+  $ runspace daemon:runner:start
+  Starting daemon in the background... ✅
+  $ runspace daemon:runner:start
+  Starting daemon in the background... ❌
+```
+
+_See code: [src/commands/daemon/runner/start.ts](https://github.com/runspacegit/cli/blob/v0.1.7/src/commands/daemon/runner/start.ts)_
+
+## `runspace daemon:runner:stop`
+
+starts daemon
+
+```
+USAGE
+  $ runspace daemon:runner:stop
+
+EXAMPLES
+  $ runspace daemon:runner:stop
+  Stopping background daemon... ✅
+  $ runspace daemon:runner:stop
+  Stopping background daemon... ❌
+```
+
+_See code: [src/commands/daemon/runner/stop.ts](https://github.com/runspacegit/cli/blob/v0.1.7/src/commands/daemon/runner/stop.ts)_
 
 ## `runspace help [COMMAND]`
 
@@ -177,7 +231,7 @@ EXAMPLE
   running... done
 ```
 
-_See code: [src/commands/run.ts](https://github.com/runspacegit/cli/blob/v0.1.5/src/commands/run.ts)_
+_See code: [src/commands/run.ts](https://github.com/runspacegit/cli/blob/v0.1.7/src/commands/run.ts)_
 
 ## `runspace update [CHANNEL]`
 
