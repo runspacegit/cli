@@ -43,7 +43,9 @@ USAGE
 <!-- commands -->
 * [`runspace autocomplete [SHELL]`](#runspace-autocomplete-shell)
 * [`runspace commands`](#runspace-commands)
+* [`runspace daemon`](#runspace-daemon)
 * [`runspace daemon:broadcast [FILE]`](#runspace-daemonbroadcast-file)
+* [`runspace daemon:nodes`](#runspace-daemonnodes)
 * [`runspace help [COMMAND]`](#runspace-help-command)
 * [`runspace run [FILE]`](#runspace-run-file)
 * [`runspace update [CHANNEL]`](#runspace-update-channel)
@@ -87,6 +89,20 @@ OPTIONS
 
 _See code: [@oclif/plugin-commands](https://github.com/oclif/plugin-commands/blob/v1.2.3/src/commands/commands.ts)_
 
+## `runspace daemon`
+
+starts daemon
+
+```
+USAGE
+  $ runspace daemon
+
+EXAMPLE
+  $ runspace daemon
+```
+
+_See code: [src/commands/daemon/index.ts](https://github.com/runspacegit/cli/blob/v0.1.4/src/commands/daemon/index.ts)_
+
 ## `runspace daemon:broadcast [FILE]`
 
 broadcasts runspace daemon script inside network
@@ -103,6 +119,20 @@ EXAMPLE
 ```
 
 _See code: [src/commands/daemon/broadcast.ts](https://github.com/runspacegit/cli/blob/v0.1.4/src/commands/daemon/broadcast.ts)_
+
+## `runspace daemon:nodes`
+
+discovers nodes
+
+```
+USAGE
+  $ runspace daemon:nodes
+
+EXAMPLE
+  $ runspace daemon:nodes
+```
+
+_See code: [src/commands/daemon/nodes.ts](https://github.com/runspacegit/cli/blob/v0.1.4/src/commands/daemon/nodes.ts)_
 
 ## `runspace help [COMMAND]`
 
