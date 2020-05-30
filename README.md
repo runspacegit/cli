@@ -10,6 +10,8 @@ Runspace daemon cli
 [![Downloads/week](https://img.shields.io/npm/dw/@runspace/cli.svg)](https://npmjs.org/package/@runspace/cli)
 [![License](https://img.shields.io/npm/l/@runspace/cli.svg)](https://github.com/runspacegit/cli/blob/master/package.json)
 
+[![asciicast](https://asciinema.org/a/335210.svg)](https://asciinema.org/a/335210)
+
 ## Installing
 ```shell
 $ # lowdb types is missing some where, so its temproary solution.
