@@ -226,9 +226,10 @@
   resolved "https://registry.yarnpkg.com/@oclif/screen/-/screen-1.0.4.tgz#b740f68609dfae8aa71c3a6cab15d816407ba493"
   integrity sha512-60CHpq+eqnTxLZQ4PGHYNwUX572hgpMHGPtTWMjdTMsAvlm69lZV/4ly6O3sAYkomo4NggGcomrDpBe34rxUqw==
 
-"@runspace/daemon@https://github.com/runspacegit/daemon.git#master":
-  version "0.1.1"
-  resolved "https://github.com/runspacegit/daemon.git#96c029da2da6f3a45376a1a37eb0fec1590933c1"
+"@runspace/daemon@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@runspace/daemon/-/daemon-0.1.2.tgz#d7ee594495dee77d9334f1d525ac0605de09428d"
+  integrity sha512-cEgVA1Nq0haimIUco05SrZ3rGZKq/8kd/pyp57r5IvipoWiGIM91m1B/4LPMda8oE/v2lPVkEp5Y9iWhtX+Osw==
   dependencies:
     "@runspace/runtime" "https://github.com/runspacegit/runtime.git#master"
     "@types/debug" "^4.1.5"
@@ -240,8 +241,17 @@
     debug "^4.1.1"
     is-admin "^3.0.0"
     lowdb "^1.0.0"
-    typescript "~3.8.3"
+    typescript "~3.9.3"
     winston "^3.2.1"
+
+"@runspace/runtime@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@runspace/runtime/-/runtime-0.1.1.tgz#cd25ef9b83e9a1744557930bb187ce6e7dd796a9"
+  integrity sha512-XCOQ6xEmzhzCp8fRdWS58zghsiV4ASUHwYRlrfpHsjZ0cdrWdav6iFWHFnd0O3gpuzJQzTZIghYlmAQym9TWQA==
+  dependencies:
+    node-fetch "^2.6.0"
+    source-map-support "^0.5.16"
+    vm2 "^3.9.2"
 
 "@runspace/runtime@https://github.com/runspacegit/runtime.git#master":
   version "0.1.0"
@@ -2988,7 +2998,7 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^3.3:
+typescript@^3.3, typescript@~3.9.3:
   version "3.9.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
   integrity sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
