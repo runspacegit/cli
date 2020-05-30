@@ -33,6 +33,7 @@ export default class Start extends Command {
     if (!existsSync(args.file)) {
       cli.error('File not found')
     }
+    cli.prideAction.start('Running...')
     const configUtil = new ConfigUtil()
     await configUtil.bootstap()
     const logger = createLogger()
@@ -68,11 +69,20 @@ export default class Start extends Command {
     } catch (error) {
       cli.error(error)
     }
+    process.on('SIGINT', async () => {
+      cli.prideAction.start('Closing network and exiting')
+      await services.stop()
+      await net.stop()
+      cli.prideAction.stop('stopped')
+      // eslint-disable-next-line no-process-exit
+      process.exit()
+    })
     try {
       const daemon = new Daemon(net, configUtil, logger)
       cli.log('Waining 10 seconds')
       await delay(10000)
       await daemon.broadcastRawFunction(readFileSync(args.file).toString())
+      cli.prideAction.start('Waiting for the events', 'use Ctrl+C to exit')
     } catch (error) {
       cli.error(error)
     }
