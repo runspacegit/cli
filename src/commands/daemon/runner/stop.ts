@@ -4,7 +4,7 @@ import {Command} from '@oclif/command'
 import cli from 'cli-ux'
 
 export default class Stop extends Command {
-  static description = 'starts daemon';
+  static description = 'stops daemon';
 
   static examples = [
     `$ runspace daemon:runner:stop
