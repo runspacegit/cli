@@ -23,19 +23,19 @@
     "ataraxia-services": "^0.8.2",
     "ataraxia-tcp": "^0.8.2",
     "cli-ux": "^5.4.6",
-    "tslib": "^1",
+    "tslib": "^2",
     "winston": "^3.2.1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
     "@types/lowdb": "^1.0.9",
-    "@types/node": "^10",
+    "@types/node": "^14",
     "@types/ws": "^7.2.4",
-    "eslint": "^5.13",
+    "eslint": "^7.1",
     "eslint-config-oclif": "^3.1",
     "eslint-config-oclif-typescript": "^0.1",
     "git-cz": "^4.6.2",
-    "globby": "^10",
+    "globby": "^11",
     "ts-node": "^8",
     "typescript": "^3.3"
   },
