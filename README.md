@@ -12,9 +12,10 @@ Runspace daemon cli
 
 ## Installing
 ```shell
-$ yarn global add @runspace/cli
+$ # lowdb types is missing some where, so its temproary solution.
+$ yarn global add @types/lowdb @runspace/cli
 $ # or using npm
-$ npm i -g @runspace/cli
+$ npm i -g @types/lowdb @runspace/cli
 $ runspace help
 ```
 
