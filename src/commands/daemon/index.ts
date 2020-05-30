@@ -22,12 +22,12 @@ export default class DaemonRunner extends Command {
       const runspace = await createDaemon()
       net = runspace.net
       services = runspace.services
-    //   daemon = runspace.daemon
+      //   daemon = runspace.daemon
+      cli.prideAction.start('Running', 'Press Ctrl+C to safe exit')
     } catch (error) {
       cli.error('Error creating the network, are you sure that another daemon is not running? \n' + error)
     }
 
-    cli.prideAction.start('Running', 'Press Ctrl+C to safe exit')
     process.on('SIGINT', async () => {
       cli.prideAction.start('Closing network and exiting')
       await services.stop()

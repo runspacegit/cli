@@ -16,7 +16,7 @@ Starting daemon in the background... ❌`,
 
   async run() {
     cli.prideAction.start('Starting daemon in the background', '⏳')
-    pm2.connect(true, (err): void => {
+    pm2.connect(false, (err): void => {
       if (err !== null) cli.error(err)
       cli.prideAction.start('Starting daemon in the background', '⏳ connected to pm2')
     })

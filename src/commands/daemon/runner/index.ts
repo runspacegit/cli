@@ -14,7 +14,7 @@ runspace-daemon    stopped 0x77
   ];
 
   async run() {
-    pm2.connect(true, (err): void => {
+    pm2.connect(false, (err): void => {
       if (err !== null) cli.error(err)
     })
 
