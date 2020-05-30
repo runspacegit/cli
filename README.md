@@ -13,6 +13,15 @@ Runspace daemon cli
 [![asciicast](https://asciinema.org/a/335210.svg)](https://asciinema.org/a/335210)
 
 ## Installing
+Using docker
+
+```shell
+$ docker run --net=host -it docker.pkg.github.com/runspacegit/cli/runspace-cli:latest bash
+root@docker-desktop:/app# runspace help
+```
+
+Using local machine with Node.js
+
 ```shell
 $ # lowdb types is missing some where, so its temproary solution.
 $ yarn global add @types/lowdb @runspace/cli
