@@ -319,10 +319,10 @@
   dependencies:
     debug "^4.1.1"
 
-"@runspace/daemon@^0.1.2":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@runspace/daemon/-/daemon-0.1.3.tgz#e0e123610936109a21413263203804388a71891f"
-  integrity sha512-qiryHQAK8YBUpuJuNnpL/gmT1y55PM9ReRjTGhbhYZPc1K4B/ja10+xhlIsH5QO/2C4WoRNd55kegqg799+BCg==
+"@runspace/daemon@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@runspace/daemon/-/daemon-0.2.0.tgz#0fea3272dadd112afb9c9eac3832ceca9faa0b33"
+  integrity sha512-bWdea6wf17xp0WbLIVSSAnRmTmfbe5DENkzT0srUneUgGlcneMe23uacK9YQWsTjAFUkAy25HKlIRUPKxw40Cw==
   dependencies:
     "@runspace/runtime" "^0.1.1"
     "@types/debug" "^4.1.5"
