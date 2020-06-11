@@ -36,7 +36,7 @@
     "@types/ws": "^7.2.4",
     "eslint": "^7.1",
     "eslint-config-oclif": "^3.1",
-    "eslint-config-oclif-typescript": "^0.1",
+    "eslint-config-oclif-typescript": "^0.2",
     "git-cz": "^4.6.2",
     "globby": "^11",
     "ts-node": "^8",
